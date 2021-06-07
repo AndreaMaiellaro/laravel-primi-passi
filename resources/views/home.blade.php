@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Ciao {{ $nome }} </h1>
+    <h1> {{ $hello }} </h1>
+    <ul>
+        <li>{{ $ingrediente_uno }}</li>
+        <li>{{ $ingrediente_due }}</li>
+        <li>{{ $ingrediente_tre }}</li>
+    </ul>
 </body>
 </html>

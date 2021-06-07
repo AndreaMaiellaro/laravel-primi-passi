@@ -15,8 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data = [
-        'nome' => 'Andrea'
+        'hello' => 'Hello World'
     ];
 
-    return view('home', $data);
+    $array = [
+        'ingrediente_uno' => 'farina',
+        'ingrediente_due' => 'pomodoro',
+        'ingrediente_tre' => 'mozzarella'
+    ];
+
+    return view('home', $data, $array);
 });
